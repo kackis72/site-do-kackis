@@ -5,8 +5,8 @@
     --text-gray: #4a4a4a;
     --color-primary: #4D41C0;
     --white: #FFFFFF;
-    --star-yellow: #FFBB3A
     --text-light-gray: #aaa
+    --star-yellow: #FFBB3A  
 }
 *{
     box-sizing: border-box;
@@ -50,7 +50,7 @@ align-items: center;
 }
 
 #dsmovie-card-list {
-    padding: 40px 10px;
+    padding: 0 10px;
 
 }
 .dsmovie-card {
@@ -141,4 +141,46 @@ width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+.dsmovie-pagination-container {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+.dsmovie-pagination-box {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dsmovie-pagination-box p {
+    margin: 0;
+    font-size: 12px;
+    color: var(--color-primary);
+    font-weight: 400;
+}
+.dsmovie-pagination-box button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dsmovie-pagination-box button img {
+    filter: brightness(0) saturate(100%) invert(29%) sepia(43%) saturate(2855%) hue-rotate(229deg) brightness(83%) contrast(91%)
+}
+
+.dsmovie-pagination-box button:disabled {
+    border: 1px solid;
+    border-color: #aaa;
+}
+.dsmovie-pagination-box button:disabled img {
+    filter: unset;
+}
+.dsmovie-flip-horizontal {
+    transform: rotate(180deg);
 }
